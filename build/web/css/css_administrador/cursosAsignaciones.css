@@ -1,0 +1,75 @@
+/* ============================= 
+   Acordeón de cursos asignados
+   ============================= */
+#acordeon-cursos {
+    margin-top: 20px; /* Espacio superior */
+    margin-bottom: 20px; /* Espacio inferior entre acordeones */
+}
+
+/* ============================= 
+   Acordeón de Alumnos por Sección
+   ============================= */
+#acordeon-alumnos {
+    margin-top: 20px; /* Espacio superior */
+}
+
+/* ============================== 
+   Botones de acordeón
+   ============================== */
+#acordeon-cursos .btn-link,
+#acordeon-alumnos .btn-link {
+    font-size: 16px;
+    color: var(--color-primario);
+    font-weight: 600;
+    text-align: left;
+    text-decoration: none; /* Elimina el subrayado */
+    position: relative;
+}
+
+/* Cambio de color al pasar el ratón */
+#acordeon-cursos .btn-link:hover,
+#acordeon-alumnos .btn-link:hover {
+    color: var(--color-secundario);
+}
+
+/* ============================= 
+   Asegúrate de que el acordeón se pueda ocultar
+   ============================= */
+
+/* Espaciado entre elementos dentro de los acordeones */
+#seccion-cursos-asignaciones .list-group {
+    margin-top: 10px; /* Añadir espacio entre el acordeón y la lista de elementos */
+    padding: 0; /* Elimina el padding extra */
+}
+
+#seccion-cursos-asignaciones .list-group-item {
+    padding: 12px 15px; /* Asegura que los elementos tengan un buen espaciado */
+    margin-bottom: 8px; /* Espacio entre cada elemento */
+}
+
+/* ============================= 
+   Fila para las columnas
+   ============================= */
+.row {
+    display: flex;
+    justify-content: space-between; /* Asegura que los contenedores estén distribuidos */
+    align-items: stretch; /* Hace que los contenedores hijos tengan la misma altura */
+}
+
+/* ============================= 
+   Aseguramos que ambas columnas se estiren igualmente
+   ============================= */
+
+
+/* Contenedor de docente */
+#form-asignar-docente {
+    flex-grow: 1; /* Hace que el formulario de docentes crezca para llenar el espacio disponible */
+}
+
+/* Contenedor de alumnos */
+#form-asignar-alumno {
+    flex-grow: 1; /* Hace que el formulario de alumnos crezca igualmente */
+}
+
+
+

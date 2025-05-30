@@ -1,0 +1,200 @@
+/* =========================== 
+   Sección: Gestión de Logros
+   =========================== */
+
+.config-logros {
+  padding: 30px;
+  background-color: #f9f9f9; /* Fondo más neutro, similar a Canjes */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- Títulos ---------- */
+.config-logros h2 {
+  font-size: 2rem;
+  color: #2c3e50; /* Color oscuro, consistente con el estilo de Canjes */
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* ---------- Botones de acción ---------- */
+.acciones-logros {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start; /* Alineamos los botones a la izquierda */
+  margin-bottom: 20px;
+}
+
+.acciones-logros button {
+  font-size: 1rem;
+  padding: 10px 18px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  color: white;
+}
+
+/* Botón primario azul */
+.acciones-logros button.primary {
+  background-color: #3498db; /* Azul más suave, similar a Canjes */
+}
+
+.acciones-logros button.primary:hover {
+  opacity: 0.9;
+  background-color: #2980b9; /* Azul más oscuro al hacer hover */
+}
+
+/* Botón secundario naranja */
+.acciones-logros button.secondary {
+  background-color: #f39c12; /* Naranja */
+}
+
+.acciones-logros button.secondary:hover {
+  opacity: 0.9;
+  background-color: #e67e22; /* Naranja más oscuro al hacer hover */
+}
+
+/* Botón de peligro rojo */
+.acciones-logros button.danger {
+  background-color: #e74c3c; /* Rojo */
+}
+
+.acciones-logros button.danger:hover {
+  opacity: 0.9;
+  background-color: #c0392b; /* Rojo más oscuro */
+}
+
+.acciones-logros button:focus {
+  outline: none;
+}
+
+/* ---------- Tabla de logros ---------- */
+.tabla-logros {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.tabla-logros th,
+.tabla-logros td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.tabla-logros th {
+  background-color: #2c3e50; /* Fondo oscuro para la cabecera de la tabla */
+  color: white;
+}
+
+.tabla-logros tr:nth-child(even) {
+  background-color: #f4f6f9;
+}
+
+.tabla-logros tr:hover {
+  background-color: #e9ecef;
+}
+
+.tabla-logros td {
+  font-size: 15px;
+}
+
+.tabla-logros button {
+  background-color: #007bff; /* Zaul */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.tabla-logros button:hover {
+  background-color: #004085; /* Azul socuro */
+}
+
+/* ---------- Vista previa de medallas ---------- */
+.medallas-preview {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.medallas-preview span {
+  font-size: 2rem;
+  padding: 10px 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+.medallas-preview span:hover {
+  transform: scale(1.1);
+  background-color: #ffeeba; /* Color de fondo más cálido al hover */
+}
+
+/* Medalla activa */
+.medallas-preview span.active {
+  background-color: #3498db; /* Azul de Canjes */
+  color: white;
+}
+
+/* Medalla inactiva */
+.medallas-preview span.inactive {
+  background-color: #6c757d;
+  color: white;
+}
+
+/* ---------- Badges de puntos ---------- */
+.badge {
+  font-size: 0.9rem;
+  padding: 6px 12px;
+  background-color: #f39c12; /* Naranja */
+  color: white;
+  border-radius: 4px;
+}
+
+/* Estilo para las medallas */
+.medallas-preview .medalla {
+  color: black; /* Cambia el color del texto a blanco */
+  background-color: #f4f6f9 /* O cualquier color de fondo que prefieras */
+}
+
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+  .config-logros {
+    padding: 20px;
+  }
+
+  /* Hacemos que los botones de acción se apilen verticalmente */
+  .acciones-logros {
+    flex-direction: column;
+  }
+
+  .acciones-logros button {
+    width: 100%; /* Los botones ocuparán el 100% de ancho */
+  }
+
+  /* Reducimos el tamaño de texto de la tabla y el padding para pantallas pequeñas */
+  .tabla-logros td,
+  .tabla-logros th {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  /* Reducimos el tamaño de las medallas para pantallas más pequeñas */
+  .medallas-preview span {
+    font-size: 1.5rem;
+  }
+}

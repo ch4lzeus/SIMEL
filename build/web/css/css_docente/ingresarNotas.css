@@ -1,0 +1,40 @@
+.panel-notas .tabla-notas input[type="number"] {
+  text-align: center;
+}
+
+.panel-notas .promedio-input[readonly] {
+  background-color: #e9ecef; /* gris claro */
+  cursor: default;
+  color: #28a745; /* verde */
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #ced4da;
+}
+
+.panel-notas .btn-success {
+  transition: 0.3s ease;
+}
+
+.panel-notas .btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.panel-notas .select-curso-notas {
+  width: 100%;               /* ✔️ que se ajuste a su contenedor */
+  max-width: 400px;          /* 🔧 puedes ajustar este valor */
+  min-height: 38px;          /* ✔️ estándar para que no se achique */
+  border-color: #28a745;
+  font-weight: 500;
+  padding: 6px 12px;         /* ✔️ que no se corte el texto */
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.panel-notas .select-curso-notas:focus {
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+  border-color: #218838;
+}

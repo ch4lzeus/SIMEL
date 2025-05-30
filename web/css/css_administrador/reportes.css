@@ -1,0 +1,245 @@
+/* =========================== 
+   Sección: Gestión de Reportes
+   =========================== */
+
+#seccion-reportes {
+  padding: 30px;
+  background-color: #f9f9f9; /* Fondo más suave */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título de la sección */
+#seccion-reportes h2 {
+  font-size: 2rem;
+  color: #2c3e50; /* Igual al canjes*/
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Selector de tipo de reporte */
+.reporte-selector {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.reporte-selector label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.reporte-selector select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.reporte-selector button {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.reporte-selector button:hover {
+  background-color: #0056b3;
+}
+
+/* Tabla de reporte */
+.tabla-reporte {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.tabla-reporte th,
+.tabla-reporte td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Color de las cabeceras de la tabla*/
+
+.tabla-reporte th {
+  background-color: #2c3e50; /* Oscuro */
+  color: white;
+}
+
+.tabla-reporte tr:nth-child(even) {
+  background-color: #f4f6f9;
+}
+
+.tabla-reporte tr:hover {
+  background-color: #e9ecef;
+}
+
+.tabla-reporte td {
+  font-size: 15px;
+}
+
+/* Botones de exportación */
+.acciones-reporte {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.acciones-reporte button {
+  padding: 10px 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.acciones-reporte .btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.acciones-reporte .btn-danger:hover {
+  background-color: #c82333;
+}
+
+.acciones-reporte .btn-success {
+  background-color: #28a745;
+  color: white;
+}
+
+.acciones-reporte .btn-success:hover {
+  background-color: #218838;
+}
+
+.acciones-reporte .btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.acciones-reporte .btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+
+/* =========================== 
+   Media Queries Responsivas 
+   =========================== */
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  #seccion-reportes {
+    padding: 20px;
+  }
+
+  /* Ajustamos el selector de reporte */
+  .reporte-selector {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  /* Ajustamos la tabla para pantallas pequeñas */
+  .tabla-reporte td,
+  .tabla-reporte th {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  /* Los botones de acción se colocan en columna */
+  .acciones-reporte {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Hacemos los botones de acción 100% de ancho */
+  .acciones-reporte button {
+    width: 100%;
+  }
+}
+
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 1200px) {
+  /* Ajustamos el título para pantallas grandes */
+  #seccion-reportes h2 {
+    font-size: 2.5rem;
+  }
+
+  /* Ajustamos los botones de exportación para pantallas grandes */
+  .acciones-reporte {
+    gap: 20px;
+  }
+
+  .acciones-reporte button {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+
+  /* Ajustamos el selector de reporte para pantallas grandes */
+  .reporte-selector {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+/* Estilos de impresión */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .tabla-reporte, .tabla-reporte * {
+    visibility: visible;
+  }
+
+  .acciones-reporte {
+    display: none;
+  }
+
+  #seccion-reportes h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  .tabla-reporte table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .tabla-reporte th,
+  .tabla-reporte td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .tabla-reporte th {
+    background-color: #f8f9fc;
+    font-weight: bold;
+  }
+
+  .tabla-reporte tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  .tabla-reporte tr:hover {
+    background-color: #eef1f7;
+  }
+
+  /* Ajustar tamaño de la tabla para que ocupe todo el ancho de la página */
+  .tabla-reporte {
+    margin: 0;
+    page-break-before: always;
+  }
+}

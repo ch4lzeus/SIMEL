@@ -1,0 +1,17 @@
+/* CSS exclusivo del panel de cursos para docente */
+.panel-cursos .tabla-cursos th,
+.panel-cursos .tabla-cursos td {
+  vertical-align: middle;
+}
+
+.panel-cursos .btn-outline-info {
+  transition: 0.3s ease;
+}
+.panel-cursos .btn-outline-info:hover {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.panel-cursos .card-header i {
+  font-size: 1.2rem;
+}
