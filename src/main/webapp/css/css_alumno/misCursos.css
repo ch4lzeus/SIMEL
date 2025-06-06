@@ -1,0 +1,113 @@
+/* Estilo para el título dentro de Mis Cursos */
+.titulo-seccion {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Estilo para el contenedor de la sección Mis Cursos */
+.panel-cursos {
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+/* Estilo para el título dentro de la sección Mis Cursos */
+.panel-cursos h2 {
+    font-size: 2rem;
+    color: #2c3e50; /* Color del texto */
+    font-weight: 600; /* Peso de la fuente */
+    margin-bottom: 20px;
+    text-align: center; /* Centrado del título */
+}
+
+/* Estilo para la tabla de cursos */
+.tabla-cursos {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+/* Estilo para los enlaces de los cursos */
+.link-curso {
+    font-weight: 600;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.link-curso:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para los estados de los cursos */
+.estado-curso.activo {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.estado-curso.finalizado {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.encabezado-primaria th {
+  background-color: #003366; /* azul oscuro */
+  color: #ffffff;            /* texto blanco */
+  font-weight: 700;
+  border-bottom: 2px solid #001f4d;
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
+
+.encabezado-primaria th:hover {
+  background-color: #003366 !important;
+  color: #ffffff !important;
+  cursor: default;
+}
+
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    /* Estilo para la sección Mis Cursos */
+    .panel-cursos {
+        padding: 20px;
+    }
+
+    /* Ajustar los encabezados y contenido de la tabla */
+    .tabla-cursos td,
+    .tabla-cursos th {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    /* Ajustar el ancho de las columnas de la tabla */
+    .tabla-cursos th,
+    .tabla-cursos td {
+        word-wrap: break-word;
+        text-align: center;
+    }
+
+    /* Estilo para los enlaces dentro de la tabla */
+    .link-curso {
+        font-size: 1rem;
+    }
+
+    /* Ajustar el tamaño de los iconos de estado */
+    .estado-curso {
+        font-size: 1.2rem;
+    }
+
+    /* Asegurar que la tabla no se desborde */
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    /* Asegurar que las celdas de la tabla no se aplasten */
+    .tabla-cursos {
+        width: 100%;
+        table-layout: auto;
+    }
+}

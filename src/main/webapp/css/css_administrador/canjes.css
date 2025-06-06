@@ -1,0 +1,46 @@
+
+.encabezado-gestionCanjes th {
+  background-color: #003366; /* azul oscuro */
+  color: #f0f0f0;            /* texto claro */
+  font-weight: 600;
+  border-bottom: 2px solid #001f4d;
+  padding: 10px 12px;
+}
+
+.encabezado-gestionCanjes th:hover {
+  background-color: #003366 !important;
+  color: #f0f0f0 !important;
+  cursor: default;
+}
+
+
+/* Botón que imita un input de formulario */
+.custom-file-upload {
+    width: 100%;
+}
+
+.custom-file-upload input[type="file"] {
+    display: none;
+}
+
+.upload-btn {
+    display: block;
+    width: 100%;
+    padding: 10px 16px;
+    text-align: left;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    color: #495057;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.upload-btn:hover {
+    background-color: #e2e6ea;
+    border-color: #adb5bd;
+}
+
+hr {
+  margin: 0.25rem 0;
+}

@@ -1,0 +1,63 @@
+.panel-logros {
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.logro-card {
+    background-color: #ffffff;
+    border-left: 6px solid #2c3e50;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.logro-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.titulo-seccion {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.nivel-logros h4 {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    font-weight: bold;
+}
+
+.custom-progress {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.custom-progress .progress-bar {
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .panel-logros {
+        padding: 20px;
+    }
+
+    .nivel-logros h4 {
+        font-size: 1.2rem;
+    }
+
+    .progress-bar {
+        font-size: 0.9rem;
+    }
+}
