@@ -67,8 +67,8 @@ public class LoginServlet extends HttpServlet {
                     redirectPage = "docente";
                     break;
                 case "alumno":
-                    session.setAttribute("panelOrigen", "alumno.jsp");
-                    redirectPage = "alumno.jsp";
+                    session.setAttribute("panelOrigen", "alumno");
+                    redirectPage = "alumno";
                     break;
             }
 

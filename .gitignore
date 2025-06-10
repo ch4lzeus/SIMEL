@@ -1,22 +1,25 @@
-# Maven
+# --- Maven ---
 target/
-.mvn/
 !mvnw
 !mvnw.cmd
 
-# NetBeans
+# --- NetBeans ---
 nbproject/private/
 build/
 nb-configuration.xml
 
-# Java
+# --- IntelliJ IDEA ---
+*.iml
+.idea/
+
+# --- Java ---
 *.class
 *.log
 
-# Sistema
+# --- Sistema ---
 .DS_Store
 Thumbs.db
 
-# Otros
-*.iml
-.idea/
+# --- Archivos específicos del proyecto ---
+# Ignorar toda la carpeta de conexión
+src/main/java/con/simel/conexion/
