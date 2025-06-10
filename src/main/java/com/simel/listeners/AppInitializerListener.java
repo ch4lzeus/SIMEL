@@ -1,7 +1,7 @@
 package com.simel.listeners; // Paquete donde resides tu listener.
 
 // --- Imports Necesarios ---
-import con.simel.conexion.DataSourceProvider; // Importa tu clase que gestiona el pool.
+import com.simel.conexion.DataSourceProvider; // Importa tu clase que gestiona el pool.
 import com.zaxxer.hikari.HikariDataSource;   // Necesario para poder llamar al método close() específico de HikariCP.
 import javax.sql.DataSource;               // Interfaz estándar para el pool.
 import javax.servlet.ServletContextEvent;    // Objeto que representa el evento de inicialización/destrucción del contexto de la aplicación.

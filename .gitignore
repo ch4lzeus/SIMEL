@@ -19,7 +19,3 @@ nb-configuration.xml
 # --- Sistema ---
 .DS_Store
 Thumbs.db
-
-# --- Archivos específicos del proyecto ---
-# Ignorar toda la carpeta de conexión
-src/main/java/con/simel/conexion/

@@ -5,7 +5,7 @@ import com.simel.modelo_administradorJSP.Curso;
 import com.simel.modelo_administradorJSP.CursoAsignado;
 import com.simel.modelo_administradorJSP.Docente;
 import com.simel.modelo_administradorJSP.GradoSeccion;
-import con.simel.conexion.DataSourceProvider;
+import com.simel.conexion.DataSourceProvider;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

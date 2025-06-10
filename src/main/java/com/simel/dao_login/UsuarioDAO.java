@@ -1,7 +1,7 @@
 package com.simel.dao_login;
 
 import com.simel.modelo_login.Usuario;
-import con.simel.conexion.DataSourceProvider;
+import com.simel.conexion.DataSourceProvider;
 
 import java.sql.*;
 

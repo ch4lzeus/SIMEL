@@ -25,9 +25,9 @@ $(document).ready(function () {
     });
     $("#btnNuevo").click(function () {
         $("#formPersonas").trigger("reset");
-        $(".modal-header").css("background-color", "#28a745");
-        $(".modal-header").css("color", "white");
-        $(".modal-title").text("Nuevo Usuario");
+        $("#modalCRUD .modal-header").css("background-color", "#28a745");
+        $("#modalCRUD .modal-header").css("color", "white");
+        $("#modalCRUD .modal-title").text("Nuevo Usuario");
         $("#modalCRUD").modal("show");
         id = null;
         opcion = 1; //alta
@@ -55,9 +55,10 @@ $(document).ready(function () {
         $("#estado").val(estado);
         opcion = 2; // Editar
 
-        $(".modal-header").css("background-color", "#007bff");
-        $(".modal-header").css("color", "white");
-        $(".modal-title").text("Editar Persona");
+        $("#modalCRUD .modal-header").css("background-color", "#007bff");
+        $("#modalCRUD .modal-header").css("color", "white");
+        $("#modalCRUD .modal-title").text("Editar Persona");
+        ;
         $("#modalCRUD").modal("show");
     });
 // Inactivar usuario (eliminación lógica)
@@ -219,5 +220,11 @@ $(document).ready(function () {
             var usuarioGenerado = primerNombre.charAt(0) + primerApellido;
             $("#usuario").val(usuarioGenerado); // Coloca el usuario generado en el campo "Usuario"
         }
+    });
+    $('#modalCRUD').on('hidden.bs.modal', function () {
+        $("#modalCRUD .modal-header")
+                .removeAttr("style") // Elimina estilos inline
+                .removeClass("bg-success bg-primary bg-danger text-white text-dark"); // Elimina clases previas si las usas
+        $("#modalCRUD .modal-title").text("");
     });
 });
